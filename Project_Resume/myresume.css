@@ -1,14 +1,15 @@
 *{
     margin: 0;
-    /* padding: 0; */
-    font-size: 22px;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     box-sizing: border-box;
     letter-spacing: 1px;
     /* line-height: 0.5px; */
 }
 body{
-    /* border: 2px solid; */
+    border: 2px solid;
     display: flex;
 }
 hr{
@@ -22,14 +23,14 @@ hr{
 }
 
 #left_side{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 25%;
     padding: 10px;
     background-color: blanchedalmond;
 }
 
 #right_side{
-    /* border: 1px solid black; */
+    border: 1px solid black;
     width: 75%;
     padding: 10px;
 }
@@ -75,4 +76,11 @@ h3{
 #Education p::before{
     content: " ";
     margin: 5px;
+}
+
+@media (max-width:800px){
+    body, #left_side, #right_side{
+        flex-direction: column;
+        width: 100%;
+    }
 }
